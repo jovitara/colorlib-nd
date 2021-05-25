@@ -22,18 +22,32 @@ body {
 .menu-list ul {
   list-style: none;
   display: flex;
-}
-.menu-list-align {
-  display: flex;
   flex-direction: row;
   text-transform: uppercase;
   font-weight: bold;
 }
-li{
-  padding-left: 5px;
+.menu-list a:hover {
+  color: red;
 }
-li a{
+.menu-list li {
+  padding-left: 5px;
+  position: relative;
+}
+.menu-list a {
   text-decoration: none;
+}
+
+.menu-list ul ul.sub-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: red;
+  z-index: 99;
+}
+ul .sub-menu {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-baner {
