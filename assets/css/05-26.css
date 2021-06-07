@@ -3,7 +3,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #fff;
+  background-color: rgb(223 219 219 / 14%);
   font-size: 14px;
   font-weight: 300;
   line-height: 1.625em;
@@ -220,59 +220,57 @@ body {
   color: white;
   text-decoration: none;
 }
-.bottom-container{
-  width: 100%;
-  margin-left: 70px;
-  margin-right: 70px;
-
+.bottom-container {
+  width: 1140px;
+  /* margin-left: 70px;
+  margin-right: 70px; */
+  margin: auto;
 }
-.single-post-row{
+.single-post-row {
   display: flex;
-/*   flex-wrap: nowrap; */
+  /*   flex-wrap: nowrap; */
   max-width: 100%;
 }
-.col-details{
+.col-details {
   display: flex;
-/*   flex-wrap: nowrap; */
+  /*   flex-wrap: nowrap; */
   max-width: 70%;
 }
-.left-center{
+.left-center {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-/*   flex-wrap: nowrap; */
-/*   flex-direction: row; */
+  /*   flex-wrap: nowrap; */
+  /*   flex-direction: row; */
 }
-.left-area{
+.left-area {
   display: flex;
-/*   flex-wrap: nowrap; */
+  /*   flex-wrap: nowrap; */
   flex-direction: column;
   padding-right: 15px;
   padding-left: 15px;
   text-align: right;
   width: 100%;
-
 }
-.tags ul{
+.tags ul {
   display: inline-block;
   list-style: none;
 }
-.tags li{
+.tags li {
   display: inline-block;
   list-style: none;
-
 }
 
-.tags{
-  display: flex;
+.tags {
+  display: inline-block;
+  /* display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: row; */
 }
-.tags a{
+.tags a {
   padding-right: 5px;
-
 }
-.post-content-area a{
+.post-content-area a {
   text-decoration: none;
 }
 .primary-btn {
@@ -286,44 +284,115 @@ body {
   font-weight: bold;
 }
 
-.img-feature img{
-  max-width: 600px;
+.img-with-description img {
+  width: 600px;
 }
-.right-area{
-max-width: 33%;
-justify-content: center;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-padding-left: 50px;
-
-}
-.right-area all{
-
-  justify-content: center;
+.right-area {
+  max-width: 33%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  
+  padding-left: 50px;
+}
+.right-area-all {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  border: 1px solid #8080802e;
+  padding: 10px;
+}
+.social-link {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.social-link i {
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
+}
+.img-with-description {
+  width: 100%;
+}
+.cards {
+  display: flex;
+  /*     flex-wrap: nowrap; */
+  /*     flex-direction: row; */
+  padding-bottom: 15px;
+}
+.search-area {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: auto;
+}
+.search-area input {
+  background: #8490ff;
+  border-radius: 10px;
+  height: 30px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.search-area ::placeholder {
+  color: white;
+}
+.search-area button {
+  border: none;
+  background: none;
+}
+.user-info-widget {
+  text-align: center;
+  margin-bottom: 20px;
   }
-  .social-link {
-    list-style: none;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
-  .social-link i{
-    align-items: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 14px;
+.line{
+  display: inline-block;
+  background: #8080802e;
+  width: 100%;
+  height: 0.2%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
-  }
-  .img-with-description{
-    width: 100%;
-  }
-  .cards{
-    display: flex;
-/*     flex-wrap: nowrap; */
-/*     flex-direction: row; */
-  }
+.popular-btn {
+  box-sizing: border-box;
+  text-decoration: none;
+  background: #8490ff;
+  border-radius: 5px;
+  color: white;
+padding: 10px;
+text-align: center;
+  font-weight: bold;
+  width: 100%;
+  
+}
+.pp-area{
+margin-top: 10px;
+}
+
+.pp-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.pp-img img{
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.pp-descriptions{
+  margin-left: 12px;
+  align-items: left;
+}
+.post-btn {
+  box-sizing: border-box;
+  text-decoration: none;
+  background: #8490ff;
+  border-radius: 5px;
+  color: white;
+padding: 10px;
+text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
